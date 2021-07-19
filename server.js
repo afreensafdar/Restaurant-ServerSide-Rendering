@@ -47,17 +47,18 @@ app.get('/restaurants/:id', async (req, res) => {
             include:MenuItem
         }
     });
-    res.render("restaurants", { restaurants });
+    console.log("Restaurants",restaurants)
+    res.render("restaurant", { restaurants });
 })
 
-app.get('/restaurants/:id', async (req, res) => {
-    const restaurant = await Restaurant.findByPk(req.params.id, {include: {
-            model: Menu,
-            include: MenuItem
-        }
-    });
-    res.json(restaurant);
-});
+// app.get('/restaurants/:id', async (req, res) => {
+//     const restaurant = await Restaurant.findByPk(req.params.id, {include: {
+//             model: Menu,
+//             include: MenuItem
+//         }
+//     });
+//     res.json(restaurant);
+// });
 
 app.post('/restaurants', restaurantChecks, async (req, res) => {
     const errors = validationResult(req);
@@ -97,6 +98,7 @@ app.patch('/restaurants/:id', async (req, res) => {
 app.get('/menus/:id', async (req, res) => {
     const menus = await Menu.findByPk(req.params.id,{include:MenuItem})
     //res.json(menus);
+    console.log("menus",menus)
     res.render('menus', {menus})// 2 args: string name of template, data to put in
 });
 

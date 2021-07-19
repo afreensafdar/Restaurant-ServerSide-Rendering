@@ -45,8 +45,9 @@ height: 225px;
 background-repeat: no-repeat;
 background-size: 225px;
 }
+
 .restaurant {
-    color:green;
+color:green;
 }
 
 .btn {
@@ -70,8 +71,8 @@ text-align: center;
 }
 
 #menuitems {
-    color:black;
-    background-color:burlywood;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
+color:black;
+background-color:burlywood;
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-align: center;
 }
