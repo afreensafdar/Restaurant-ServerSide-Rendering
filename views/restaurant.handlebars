@@ -1,0 +1,22 @@
+<div>
+    <a class="btn" href="/restaurants">Back to Restaurants</a>
+    <h2>Restaurant: {{restaurant.name}}</h2>
+	<img class="item-img" src="{{restaurant.image}}" />
+
+        <h2 id="menulist">{{restaurant.Menus.length}} Menus</h2>
+        </h2>
+		{{#each restaurant.Menus}} <!-- for each restaurant in restaurants, create this html -->
+		<article class="clearfix item-container block">
+            <h2>Menu :{{title}}</h2>
+		</article>
+
+        <h2 id="menuitems"> {{MenuItems.length}} Menu Items</h2>
+        </h2>
+		{{#each this.MenuItems}} <!-- for each restaurant in restaurants, create this html -->
+		<article class="clearfix item-container block">
+			<h2>{{this.name}}: {{this.price}}</h2>
+        </article>
+        {{/each}}
+        {{/each}}
+</div>
+	

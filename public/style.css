@@ -1,0 +1,77 @@
+body {
+    background-color:plum;
+}
+
+* {
+box-sizing: border-box;
+}
+
+.clearfix :after {
+    content: '';
+    display: table;
+    clear:both;
+}
+
+body {
+font-family: "Helvetica Neue";
+font-weight: 100;
+}
+
+h1, h2 {
+margin-left: 50px;
+font-weight: 100;
+clear: both;
+}
+
+.block {
+width: 30vw;
+float: left;
+}
+
+.big-block {
+width: 60vw;
+float: left;
+}
+
+.item-container {
+margin: 1.5vw;
+}
+
+.item-img {
+width: 225px;
+padding: 0 10px;
+float: left;
+height: 225px;
+background-repeat: no-repeat;
+background-size: 225px;
+}
+.restaurant {
+    color:green;
+}
+
+.btn {
+display: inline-block;
+width:  150px;
+background-color: #d3d3d3;
+border-radius:  10px;
+text-align:  center;
+box-shadow: 1px #d3d3d3;
+}
+
+label, select {
+font-size: 1em;
+}
+
+#menulist {
+background-color:peru;
+font-family: 'Courier New', Courier, monospace;
+color: black;
+text-align: center;
+}
+
+#menuitems {
+    color:black;
+    background-color:burlywood;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
